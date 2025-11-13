@@ -9,10 +9,10 @@ const App: React.FC = () => {
   const [basketballDate, setBasketballDate] = useState<Date | null>(new Date(2023, 10, 25)); // November 25, 2023
 
   return (
-    <Box sx={{ width: "100%", minHeight: "100vh", backgroundColor: "#001f3f" }}>
-      <AppBar position="static" sx={{ backgroundColor: "#FFD700" }}>
+    <Box sx={{ width: "100%", minHeight: "100vh", backgroundColor: "rgba(224, 224, 220)" }}>
+      <AppBar position="static" sx={{ backgroundColor: "rgba(42, 40, 41)" }}>
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: "#001f3f" }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: "#ffffff" }}>
             Sports Scores
           </Typography>
           <Tabs
@@ -20,13 +20,13 @@ const App: React.FC = () => {
             onChange={(_, newValue) => setTab(newValue)}
             sx={{
               '& .MuiTab-root': {
-                color: "#001f3f",
+                color: "#ffffff",
               },
               '& .Mui-selected': {
-                color: "#001f3f",
+                color: "#ffffff",
               },
               '& .MuiTabs-indicator': {
-                backgroundColor: "#001f3f",
+                backgroundColor: "#ffffff",
               }
             }}
           >

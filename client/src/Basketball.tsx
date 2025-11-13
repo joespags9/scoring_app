@@ -109,7 +109,7 @@ const Basketball: React.FC<BasketballProps> = ({ selectedDate, setSelectedDate }
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '30px' }}>
         {scores.map((score) => (
           <div key={score._id} style={{
-            backgroundColor: '#FFD700',
+            backgroundColor: 'rgba(204, 204, 200)',
             borderRadius: '8px',
             padding: '16px',
             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)'
